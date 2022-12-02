@@ -1,8 +1,8 @@
 import numpy as np
 
 inventory = []
-# Read inventory.txt file into data object
-with open("inventory.txt", "r") as file:
+# Read puzzle_input_day1.txt file into data object
+with open("puzzle_input_day1.txt", "r") as file:
     data = file.read().split("\n")
 
 temp_inventory = []
