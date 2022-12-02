@@ -1,4 +1,4 @@
-name: aac-2022
+name: aoc22
 channels:
   - conda-forge
   - defaults
