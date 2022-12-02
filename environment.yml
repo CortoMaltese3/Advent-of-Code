@@ -1,0 +1,7 @@
+name: aac-2022
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
