@@ -1,7 +1,6 @@
-from constants import PUZZLE_INPUT_DAY1, PUZZLE_INPUT_DAY2
 
 # Read puzzle_input_day2.txt file into data object
-with open(PUZZLE_INPUT_DAY2, "r") as file:
+with open("puzzle_input\\day2.txt", "r") as file:
     data = file.read().split("\n")
 
 elf_moves = [gesture[0] for gesture in data]
@@ -93,5 +92,5 @@ def calculate_total_points_part2(opp1_moves, opp2_moves):
 my_points_part1 = calculate_total_points_part1(elf_moves, my_moves)
 my_points_part2 = calculate_total_points_part2(elf_moves, my_moves)
 
-print(f"My total points in part 1 are: {my_points_part1}")
-print(f"My total points in part 2 are: {my_points_part2}")
+print(f"My total points in part 1 are: {my_points_part1}") #12645
+print(f"My total points in part 2 are: {my_points_part2}") #11756

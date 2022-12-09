@@ -14,8 +14,7 @@ def get_priority(comp1, comp2):
             if item1 == item2:
                 return get_points(item1)
 
-
-df = pd.read_csv("puzzle_input_day3.txt", names=["supplies"])
+df = pd.read_csv("puzzle_input\\day3.txt", names=["supplies"])
 df["comp1"] = df["supplies"].apply(lambda row: row[: int(len(row) / 2)])
 df["comp2"] = df["supplies"].apply(lambda row: row[int(len(row) / 2) :])
 df["priority"] = df.apply(lambda row: get_priority(row["comp1"], row["comp2"]), axis=1)
